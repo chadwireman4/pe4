@@ -29,6 +29,17 @@ void DisplayBoard(TileFill board[3][3] ){
 	}	
 }
 
+Location GetPlayerChoice() {
+    int col, row;
+
+    cout << "Where will you play?" << endl;
+    cout << "Column: ";
+    cin >> col;
+    cout << "Row: ";
+    cin >> row;
+
+    return {col, row};
+}
 
 int main() {
 	TileFill board[3][3];
