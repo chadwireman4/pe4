@@ -1,0 +1,41 @@
+| | | |
+| | | |
+| | | |
+Where will you play?
+Column: 2
+Row: 2
+| | | |
+| |O| |
+| | | |
+Where will you play?
+Column: 1
+Row: 1
+|X| | |
+| |O| |
+| | | |
+Where will you play?
+Column: 2
+Row: 3
+|X| | |
+| |O| |
+| |O| |
+Where will you play?
+Column: 2
+Row: 1
+|X|X| |
+| |O| |
+| |O| |
+Where will you play?
+Column: 1
+Row: 2
+|X|X| |
+|O|O| |
+| |O| |
+Where will you play?
+Column: 3
+Row: 1
+|X|X|X|
+|O|O| |
+| |O| |
+Where will you play?
+Column:
