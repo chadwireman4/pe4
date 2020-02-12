@@ -12,25 +12,32 @@ void CreateBoard(TileFill board[3][3]) {
 	}
 }
 
-void DisplayBoard(TileFill board[3][3] ){
+void DisplayBoard(TileFill board[3][3]) {
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
-			if (board[i][j] == TileFill::Empty){
-				cout << " ";
-			} else if (board[i][j] == TileFill::X) {
-				cout << "X";
-			} else if (board[i][j] == TileFill::O) {
-				cout << "O";
+			switch(board[i][j]) {
+				case TileFill::Empty:
+					cout << "| ";
+					break;
+				case TileFill::X:
+					cout << "|X";
+					break;
+				case TileFill::O:
+					cout << "|O";
+					break;
 			}
-
-			cout << "|";
 		}
-		cout << endl;
-	}	
+
+		cout << "|" << endl;
+	}
 }
 
+void PlaceMarker(TileFill board[3][3], Location place, TileFill value) {
+	board[place.row - 1][place.col - 1] = value;
+}
 
 int main() {
 	TileFill board[3][3];
 	CreateBoard(board);
+	DisplayBoard(board);
 }
