@@ -32,6 +32,10 @@ void DisplayBoard(TileFill board[3][3]) {
 	}
 }
 
+void PlaceMarker(TileFill board[3][3], Location place, TileFill value) {
+	board[place.row - 1][place.col - 1] = value;
+}
+
 int main() {
 	TileFill board[3][3];
 	CreateBoard(board);
